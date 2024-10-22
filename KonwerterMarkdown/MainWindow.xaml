@@ -1,0 +1,64 @@
+﻿<Window x:Class="MarkdownHtmlConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Markdown to HTML Converter" Height="500" Width="800"
+        Background="#f0f0f0">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Background" Value="#007ACC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="#007ACC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="Auto" MinHeight="64"/>
+            <RowDefinition Height="Auto" MinHeight="34.96"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="MarkdownTextBox" Grid.Row="1" Grid.Column="0" 
+                 AcceptsReturn="True" VerticalScrollBarVisibility="Auto" 
+                 TextWrapping="Wrap" Background="White" Margin="10,10,10,1"/>
+        <TextBox x:Name="HtmlTextBox" Grid.Row="1" Grid.Column="1" 
+                 AcceptsReturn="True" VerticalScrollBarVisibility="Auto" 
+                 TextWrapping="Wrap" Background="White" Margin="10,10,10,1"/>
+
+        <Button Content="Convert to HTML" Grid.Row="3" Grid.Column="0" 
+                Click="ConvertToHtml_Click" Margin="10,20,10,27"/>
+        <Button Content="Convert to Markdown" Grid.Row="3" Grid.Column="1" 
+                Click="ConvertToMarkdown_Click" Margin="10,20,10,27"/>
+        <Button Content="Wyczyść" Grid.Row="4" Grid.ColumnSpan="2" 
+                Click="ClearFields_Click" Margin="10,6,10,6"/>
+    </Grid>
+</Window>

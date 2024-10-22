@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonwerterMarkdown", "KonwerterMarkdown\KonwerterMarkdown.csproj", "{C36D2189-16E4-427D-8851-97E03D1F5833}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C36D2189-16E4-427D-8851-97E03D1F5833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36D2189-16E4-427D-8851-97E03D1F5833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36D2189-16E4-427D-8851-97E03D1F5833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36D2189-16E4-427D-8851-97E03D1F5833}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1B48458-98C8-467C-83DE-2822D1130190}
+	EndGlobalSection
+EndGlobal
