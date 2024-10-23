@@ -1,0 +1,55 @@
+W ramach zadania dodatkowego proszę o realizację następującej aplikacji:
+Konwerter Markdown to HTML/HTML to Markdown
+Aplikacja umożliwia konwertowanie między formatami Markdown a HTML (i z powrotem). Można posiłkować się bibliotekami NuGet. Oczekiwane wsparcie dla:
+# Header
+
+## Subheader
+
+### Subsubheader
+
+[text of hyperlink](URL of hyperlink)
+
+| header1 of table | header 2 of table |
+| --- | --- |
+| row1 header1 in table body | row 2 header2 in table body |
+
+*italic*
+
+**bold**
+
+`monotype (line of code)`
+
+
+
+```
+
+block
+
+of
+
+monotype (block of code)
+
+```
+
+
+
+- list item1
+
+- list item2
+
+- list item3
+
+
+
+1. Ordered list item1
+
+2. Ordered list item2
+
+3. Ordered list item3
+
+
+
+> quote
+
+
+
